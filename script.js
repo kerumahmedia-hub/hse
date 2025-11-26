@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fungsi untuk mengirim data ke GitHub sebagai file JSON (opsional)
     async function sendToGitHub(data) {
-        const token = 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN'; // Ganti dengan token Anda
-        const repo = 'username/repo-name'; // Ganti dengan repo Anda
+        const token = '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'; // Ganti dengan token Anda
+        const repo = 'kerumahmedia-hub/hse'; // Ganti dengan repo Anda
         const path = `data/${data.id}.json`;
 
         const response = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
